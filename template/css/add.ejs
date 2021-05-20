@@ -1,0 +1,85 @@
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #282a36;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+form {
+    background-color: #44475a;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.input-data:focus, textarea:focus {
+    outline: none;
+}
+
+input[name="url"] {
+    margin: 5px 0px 5px 0;
+}
+
+textarea, input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 80%;
+    resize: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.button-create-link {
+    border: none;
+    background-color: #50fa7b;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+.button-create-link:hover {
+    text-decoration: underline;
+    color: white;
+    font-weight: 900;
+}
+
+textarea {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    form {
+        width: 80%;
+    }
+
+    input, textarea {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    form {
+        width: 95%;
+    }
+}
+
+</style>

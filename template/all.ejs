@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+        <%- include('./css/all') %> 
+        <title>Links</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <header>
+                <h1>Link menager</h1>
+            </header>
+            <div class="main">
+                <div class="link">
+                    <a href="/add" class="button-add-link">Add Link</a>
+                </div>
+                <h1 class="title-for-links">Links</h1>
+                <div class="links-container">
+                    <% for (let link = 0;link < links.length;link++) { %>
+                        <div class="link-container" onclick="Redirect('<%= links[link].title %>')">
+                            <div class="data-container">
+                                <h1>Title: <%= links[link].title %> </h1>
+                                <p>Url: <%= links[link].url%></p>
+                                <p class="description">Description: <span class="description-data"><%= links[link].description%></span></p>
+                                <p>Clicks: <%= links[link].click%></p>
+                            </div>
+                        </div>
+                    <% } %> 
+                </div>
+            </div>
+            <footer>
+                <h1>Developed by: </h1>
+            </footer>
+        </div>
+    </body>
+    <script type="text/javascript">
+        function Redirect(title) {
+            window.location.href = window.location.href + title
+        }
+    </script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap">
+        <%- include('./css/add') %> 
+        <title>Add Link</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <header>
+                <h1>Add Link</h1>
+            </header>
+
+            <div class="data-container">
+                <form method="POST" action="/">
+                    <input class="input-data" type="text" name="title" placeholder="Title" required>
+                    <input class="input-data" type="text" name="url" placeholder="Adress" required>
+                    <textarea name="description" rows="4" cols="50"></textarea>
+                    
+
+                    <button class="button-create-link">Create Link</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
